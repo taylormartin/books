@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   # before_filter :set_json_format
-  return_json except: [:show, :index]
+  return_json except: [:show, :index, :friends]
 
   def friend
     friend = User.find params[:id]
