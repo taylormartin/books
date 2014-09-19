@@ -7,6 +7,9 @@ Rails.application.routes.draw do
       post :review
       post :recommend
     end
+    collection do
+      post :query
+    end
   end
 
   resources :users, only: [:index, :show] do
