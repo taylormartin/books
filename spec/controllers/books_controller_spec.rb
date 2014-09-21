@@ -3,6 +3,20 @@ require 'rails_helper'
 describe BooksController do
   render_views
 
+  it 'can query books by ISBN' do
+    me = create :user
+    sign_in me
+
+    book = create :book
+    book_data = attributes_for :book
+    post :create, book: book_data
+
+
+    post :query, isbn: book_data[:isbn]
+    binding.pry
+    expect( response.json[:isbn] ).to eq book_data[:isbn]
+  end
+
   it 'can list reviews for a book' do
     book = create :book
     2.times { create :review, book: book }
