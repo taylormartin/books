@@ -29,7 +29,4 @@ class Identity < ActiveRecord::Base
       auth.info.send(attr) || raise("Could not find #{attr} in #{auth}")
     end
   end
-
-
-
 end
