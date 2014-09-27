@@ -18,7 +18,7 @@ gem 'hashie'
 gem 'omniauth'
 gem 'omniauth-amazon'
 gem 'omniauth-twitter'
-gem "omniauth-google-oauth2"
+gem 'omniauth-google-oauth2'
 gem 'figaro'
 gem 'annotate'
 gem 'gravtastic'
@@ -43,4 +43,9 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
