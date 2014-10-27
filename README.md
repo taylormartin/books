@@ -1,28 +1,68 @@
-# Bookstore
+[![Code Climate](https://codeclimate.com/github/JTorr/BookFinder/badges/gpa.svg)](https://codeclimate.com/github/JTorr/BookFinder)
 
-The goal for this project is to flesh out a (mostly) pre-existing Rails-based JSON API and add some rich client-side functionality.
+IRON SHOP README
+======
 
-Some prelimiaries:
+What is It?
+---------------
 
-* Fork, clone and setup the project.
-* Look over the data model and make sure you understand what's being stored.
-* Look over the (non-Devise) routes, and try to determine what the corresponding
-  controller actions _should_ do.
+Book Finder is a group project developed along with 3 other students at the Iron Yard.
+Using the GoogleBooks API, it allows users to search for books by ISBN, recommend books to friends, and post reviews.
 
-Some controller actions are not (fully) implemented, and you may need to change or implement them.
+My main contributions were:
 
-TODO for you:
+1. The Price Watch feature, which includes a mailer and background workers to notify customers when an item's price is updated.
+2. The logic to allow sellers to post items (including the associated Rspec tests and factories).
 
-Add views (HTML and/or JSON where appropriate) and implement some rich on-page interactions. I expect at least the following two -
 
-1. Add a "write a review" button. When clicked, it adds a form with a text box and score to the page. When that form is submitted, it should be both saved to the database and added to the page, without having to do a page refresh.
+How Can I Use It?
+----------------
 
-2. Add a "recommend to a friend" button. When clicked, it prompts the user to select one of their friends and write a note. That friend should be able to see the message on another page (e.g. /recommendations). I'm thinking something like a Bootstrap modal here, but feel free to use anything that lets you get the right data.
+BookFinder is live on Heroku: https://book-nerd.herokuapp.com/.
 
-This could be done with Angular or raw jQuery, as you prefer.
+Find and ISBN on Amazon.com or on the back of a book, and search by that ISBN number. Once the book is located, click "Save" and it will be added to the database.
 
-Some opportunities for further client side practice, if you've finished those and want to go further -
+You can then write reviews and recommend books to other users that you have friended.
 
-* Be able to friend / unfriend users by clicking a button next to their posted reviews
-* Periodically check for new recommendations and display a message when new ones are recieved
-* Make AJAX calls to Amazon to fetch actual book data / images from the client side
+
+Installation
+----------------
+
+**This application uses Postgres. You must have that installed and open to run the app.
+
+First, clone the project:
+
+```
+git clone https://github.com/JTorr/BookFinder.git
+```
+
+Go into the directory where it is installed, and bundle the gems:
+
+```
+cd BookFinder
+bundle install
+```
+
+Then set up the database:
+
+```
+rake db:setup
+```
+
+Running the Application:
+----------------
+
+```
+bundle exec rails s
+```
+
+
+Feedback and Future Development
+----
+
+Features & Fixes planned for future development:
+
+* Allow search by title
+* Add CSS styling to improve the appearance of the app.
+
+All bugs, feature requests, pull requests, feedback, etc., are welcome.
