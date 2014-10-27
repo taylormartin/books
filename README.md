@@ -40,14 +40,3 @@ Running the Application:
 ```
 bundle exec rails s
 ```
-
-
-Feedback and Future Development
-----
-
-Features & Fixes planned for future development:
-
-* Allow search by title
-* Add CSS styling to improve the appearance of the app.
-
-All bugs, feature requests, pull requests, feedback, etc., are welcome.
