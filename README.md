@@ -9,21 +9,6 @@ What is It?
 Book Finder is a group project developed along with 3 other students at the Iron Yard.
 Using the GoogleBooks API, it allows users to search for books by ISBN, recommend books to friends, and post reviews.
 
-My main contributions were:
-
-1. The Price Watch feature, which includes a mailer and background workers to notify customers when an item's price is updated.
-2. The logic to allow sellers to post items (including the associated Rspec tests and factories).
-
-
-How Can I Use It?
-----------------
-
-BookFinder is live on Heroku: https://book-nerd.herokuapp.com/.
-
-Find and ISBN on Amazon.com or on the back of a book, and search by that ISBN number. Once the book is located, click "Save" and it will be added to the database.
-
-You can then write reviews and recommend books to other users that you have friended.
-
 
 Installation
 ----------------
