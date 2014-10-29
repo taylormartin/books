@@ -1,8 +1,5 @@
 [![Code Climate](https://codeclimate.com/github/JTorr/BookFinder/badges/gpa.svg)](https://codeclimate.com/github/JTorr/BookFinder)
 
-IRON SHOP README
-======
-
 What is It?
 ---------------
 
@@ -13,7 +10,7 @@ Using the GoogleBooks API, it allows users to search for books by ISBN, recommen
 Installation
 ----------------
 
-**This application uses Postgres. You must have that installed and open to run the app.
+**This application uses PostgreSQL. You must have that installed and open to run the app.
 
 First, clone the project:
 
@@ -24,7 +21,6 @@ git clone https://github.com/JTorr/BookFinder.git
 Go into the directory where it is installed, and bundle the gems:
 
 ```
-cd BookFinder
 bundle install
 ```
 
@@ -38,5 +34,5 @@ Running the Application:
 ----------------
 
 ```
-bundle exec rails s
+rails s
 ```
